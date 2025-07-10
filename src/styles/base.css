@@ -1,7 +1,42 @@
 :root {
+  /* Monochrome Colors */
+  --color-bg: #ffffff;
+  --color-text: #0a0a0a;
+  --color-primary: #111111;
+  --color-secondary: #555555;
+  --color-muted: #aaaaaa;
+  --color-border: #e0e0e0;
+  --color-accent: #333333;
+  --color-error: #ff5c5c;
+
+  /* Font */
   --font-main: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 3rem;
 }
 
-body {
+/* Reset & Global Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   font-family: var(--font-main);
+  font-size: var(--fs-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }

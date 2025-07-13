@@ -6,10 +6,21 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 const toggleMenu = () => {
+    const menuIsOpening = !isMenuOpen;
     setIsMenuOpen(!isMenuOpen);
     const navLinksContainer = document.querySelector('.nav-links-container');
     if (navLinksContainer) {
     navLinksContainer.classList.toggle('active', !isMenuOpen);
+    }
+
+    if (menuIsOpening) {
+        document.body.style.overflow = "hidden";
+        document.body.style.position = "fixed";
+        document.body.style.width = "100%";
+    } else {
+        document.body.style.overflow = "";
+        document.body.style.position = "";
+        document.body.style.width = "";
     }
 };
 

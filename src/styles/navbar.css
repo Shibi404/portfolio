@@ -18,9 +18,12 @@ nav {
     font-weight: 500;
 }
 
+.nav-links-item a{
+    transition: 0.3s all;
+}
+
 .nav-links-item a:hover {
     color: var(--color-primary);
-    transition: 0.3s ease-in-out;
 }
 
 .logo a{

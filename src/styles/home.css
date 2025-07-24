@@ -1,11 +1,14 @@
-.home-container {              
-  min-height: calc(100vh - 80px); 
-  padding: 2rem;
-  display: flex;             
-  background-color: var(--color-bg); 
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
+.home-container {         
+    display: flex;             
+    background-color: var(--color-bg); 
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding-top: 60px;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 
 .home-picture {
@@ -81,5 +84,5 @@
 
 .social-icon:hover {
     fill: var(--color-primary);
-    
+
 }

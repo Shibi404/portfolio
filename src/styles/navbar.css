@@ -1,24 +1,31 @@
 nav { 
-    position: sticky;
-    padding: 20px 50px;
+    position: fixed;
+    height: 60px;
+    padding: 0 50px;
+    display: flex;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    z-index: 1000
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-links-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .nav-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    margin: 0 auto;
     gap: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-weight: 500;
+    flex: 1;
 }
 
 .nav-links-item a{
@@ -105,11 +112,15 @@ nav {
         padding: 0;
     }
 
+    .nav-links-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .nav-links.active {
         transform: translateX(0);
     }
 
-    /* Hamburger Icon */
     .hamburger {
         position: relative;
         width: 10px;
@@ -165,5 +176,4 @@ nav {
     .switcher {
         display: none;
     }
-    /* ------------ */
 }

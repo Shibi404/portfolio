@@ -1,12 +1,9 @@
 import React from 'react'
 import '../styles/home.css';
-import Navbar from '../components/Navbar'
 import picture from '../images/picture.jpg'
 const Home = () => {
   return (
     <>
-    <Navbar />
-    
     <section className='home-container'>
         <div className='home-text'>
             <span id='name'>Shibi Krishna</span>

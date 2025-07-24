@@ -7,8 +7,6 @@
     padding-top: 60px;
     position: relative;
     z-index: 1;
-    height: 100vh;
-    flex-wrap: wrap;
 }
 
 .home-picture {
@@ -85,4 +83,38 @@
 .social-icon:hover {
     fill: var(--color-primary);
 
+}
+
+@media screen and (max-width: 1024px) {
+    .home-container {
+        padding: 2rem;
+        flex-direction: column-reverse;
+        gap: 0;            
+    }
+
+    .home-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-text #name {
+        font-size: clamp(3.125rem, 2.1513rem + 4.451vw, 5rem);
+    }
+
+    .home-text #heading {
+        font-size: clamp(1.875rem, 1.5504rem + 1.4837vw, 2.5rem);
+    }
+
+    .home-text #paragraph {
+        font-size: clamp(0.8125rem, 0.2608rem + 2.5223vw, 1.875rem);
+        padding: 5px;
+    }
+
+    .social-icons-container {   
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 7%;
+    }
 }

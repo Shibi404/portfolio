@@ -25,6 +25,20 @@ const Home = () => {
       </div>
 
     </section>
+
+    <section className="about-preview">
+      <div className='container'>
+        <h2 className='hero-heading'>About Me</h2>
+        <p className='hero-para'>
+          I'm S Shibi Krishna Ram, a passionate and curious developer focused on creating clean, user-centric web experiences. I enjoy blending creativity with code to build applications that are both functional and elegant.
+        </p>
+        <p className='hero-para'>
+          From crafting responsive UIs to exploring full-stack projects, I thrive on solving real-world problems through technology. Currently exploring React, Node.js, and beyond.
+        </p>
+        <button className='button' id='learn-more-btn'>Learn More</button>
+      </div>
+    </section>
+
     </>
     
   )

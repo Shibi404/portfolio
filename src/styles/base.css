@@ -67,3 +67,23 @@ html, body {
   margin: 0 auto;
   padding: 50px;
 }
+
+.button {
+  font-family: 'Inter', sans-serif;
+  padding: 8px 16px;                     
+  background-color: var(--color-bg);
+  color: var(--color-primary);         
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: var(--fs-base);                  
+  font-weight: 500;
+  border: 2px solid black;
+  transition: all 0.3s ease;    
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);     
+}

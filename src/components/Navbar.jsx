@@ -54,7 +54,7 @@ const toggleMenu = () => {
           </li>
         </ul>
 
-        <button id='contact-btn'>
+        <button className='button' id='contact-btn'>
           Contact
         </button>
       </div>

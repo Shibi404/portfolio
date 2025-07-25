@@ -26,7 +26,7 @@ const toggleMenu = () => {
 
   return (
     <nav>
-      <div className='nav-links-container'>
+      <div className='nav-links-container container'>
         <div className='logo'>
           <a href=""><img src={logo} alt="Logo" /></a>
         </div>

@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
     <section className='home-container'>
+      <div className='container'>
         <div className='home-text'>
             <span id='name'>Shibi Krishna</span>
             <span id='heading'>Full Stack Developer</span>
@@ -21,7 +22,7 @@ const Home = () => {
         <div className="home-picture">
             <img src={picture} alt="" />
         </div>
-
+      </div>
 
     </section>
     </>

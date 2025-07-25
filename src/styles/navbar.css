@@ -1,7 +1,6 @@
 nav { 
     position: sticky;
     height: 60px;
-    padding: 0 50px;
     display: flex;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     z-index: 1000;
@@ -16,6 +15,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0 30px;
 }
 
 .nav-links {

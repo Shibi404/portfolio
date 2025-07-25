@@ -1,15 +1,27 @@
 :root {
-  /* Monochrome Colors */
-  --color-bg: #ffffff;
-  --color-text: #0a0a0a;
-  --color-primary: #111111;
-  --color-secondary: #555555;
-  --color-muted: #aaaaaa;
-  --color-border: #e0e0e0;
-  --color-accent: #333333;
-  --color-error: #ff5c5c;
+  /* ===== Monochrome Color Palette ===== */
 
-  /* Font */
+  /* Background Shades */
+  --color-bg: #ffffff;           /* base white */
+  --color-bg-light: #f5f5f5;     /* very light gray for sections */
+  --color-bg-medium: #e0e0e0;    /* light-medium gray */
+  --color-bg-dark: #1c1c1c;      /* rich dark gray for dark sections */
+
+  /* Text Colors */
+  --color-text: #0a0a0a;         /* primary text */
+  --color-text-light: #ffffff;   /* text on dark bg */
+  --color-muted: #888888;        /* muted/inactive text */
+  --color-secondary: #444444;    /* soft heading/subtext */
+  --color-accent: #222222;       /* stronger dark text */
+
+  /* Borders */
+  --color-border: #d4d4d4;       /* soft border gray */
+
+  /* State Colors */
+  --color-primary: #111111;      /* general dark tone */
+  --color-error: #ff4d4d;        /* error red */
+
+  /* ===== Typography ===== */
   --font-main: 'Inter', sans-serif;
 
   /* Font Sizes */
@@ -22,6 +34,7 @@
   --fs-2xl: 2rem;
   --fs-3xl: 3rem;
 }
+
 
 /* Reset & Global Setup */
 * {

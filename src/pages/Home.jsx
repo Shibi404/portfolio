@@ -80,6 +80,30 @@ and interactive navigation.</p>
       </div>
     </section>
 
+    <section className="skills-preview">
+
+      <div className='container'>
+        <h2 className="hero-heading">Tech Stack</h2>
+
+        <div className='marquee-container'>
+          <marquee behavior="scroll" direction="left" scrollamount="6" className="marquee">
+            <img src="/logos/html.png" alt="HTML" className="tech-logo" />
+            <img src="/logos/css-3.png" alt="CSS" className="tech-logo" />
+            <img src="/logos/js.png" alt="JavaScript" className="tech-logo" />
+            <img src="/logos/react.png" alt="React" className="tech-logo" />
+            <img src="/logos/node-js.png" alt="Node.js" className="tech-logo" />
+            <img src="/logos/MongoDB.png" alt="MongoDB" className="tech-logo" />
+            <img src="/logos/git.png" alt="Git" className="tech-logo" />
+          </marquee>
+        </div>
+        <div className="view-all-container">
+          <button className="button view-all-btn" onClick={() => navigate('/skills')}>
+            View All Skills
+          </button>
+        </div>
+      </div>
+    </section>
+
     </>
     
   )

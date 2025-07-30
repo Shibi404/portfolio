@@ -50,7 +50,7 @@ function Navbar() {
             <a href='' onClick={() => closeMenuAndNavigate('/about')}>About</a>
           </li>
           <li className='nav-links-item'>
-            <a href='' onClick={() => closeMenuAndNavigate('/projects')}>Project</a>
+            <a href='' onClick={() => closeMenuAndNavigate('/projects')}>Projects</a>
           </li>
           <li className='nav-links-item'>
             <a href='' onClick={() => closeMenuAndNavigate('/skills')}>Skills</a>

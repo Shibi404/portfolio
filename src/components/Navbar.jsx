@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../images/Logo.png';
 
@@ -24,9 +24,11 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-links-container container'>
-        <div className='logo'>
-          <a href="#"><img src={logo} alt="Logo" /></a>
-        </div>
+      <div className='logo'>
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
+      </div>
 
         <label className="hamburger">
           <input

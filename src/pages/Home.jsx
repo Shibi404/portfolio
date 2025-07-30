@@ -1,7 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 import picture from '../images/picture.jpg'
 const Home = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
     <section className='home-container'>
@@ -35,7 +39,7 @@ const Home = () => {
         <p className='hero-para'>
           From crafting responsive UIs to exploring full-stack projects, I thrive on solving real-world problems through technology. Currently exploring React, Node.js, and beyond.
         </p>
-        <button className='button' id='learn-more-btn'>Learn More</button>
+        <button className='button' id='learn-more-btn' onClick={() => navigate('/about')}>Learn More</button>
       </div>
     </section>
 
@@ -75,7 +79,7 @@ and interactive navigation.</p>
         </div>
 
         <div className="view-all-container">
-          <button className="button" id="view-all-btn">View All</button>
+          <button className="button" id="view-all-btn" onClick={() =>navigate('/projects')}>View All</button>
         </div>
       </div>
     </section>

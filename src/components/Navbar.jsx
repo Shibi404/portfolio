@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../images/Logo.png';
 
@@ -24,11 +24,11 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-links-container container'>
-      <div className='logo'>
-        <Link to="/">
-          <img src={logo} alt="Logo" />
-        </Link>
-      </div>
+        <div className='logo'>
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
+        </div>
 
         <label className="hamburger">
           <input
@@ -46,16 +46,16 @@ function Navbar() {
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li className='nav-links-item'>
-            <a href='' onClick={() => closeMenuAndNavigate('/')}>Home</a>
+            <Link to="/" onClick={() => closeMenuAndNavigate('/')}>Home</Link>
           </li>
           <li className='nav-links-item'>
-            <a href='' onClick={() => closeMenuAndNavigate('/about')}>About</a>
+            <Link to="/about" onClick={() => closeMenuAndNavigate('/about')}>About</Link>
           </li>
           <li className='nav-links-item'>
-            <a href='' onClick={() => closeMenuAndNavigate('/projects')}>Projects</a>
+            <Link to="/projects" onClick={() => closeMenuAndNavigate('/projects')}>Projects</Link>
           </li>
           <li className='nav-links-item'>
-            <a href='' onClick={() => closeMenuAndNavigate('/skills')}>Skills</a>
+            <Link to="/skills" onClick={() => closeMenuAndNavigate('/skills')}>Skills</Link>
           </li>
         </ul>
 

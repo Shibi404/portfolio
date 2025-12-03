@@ -69,6 +69,11 @@ nav {
     display: none;
 }
 
+.active-link a{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1024px) {
   
     #contact-btn {

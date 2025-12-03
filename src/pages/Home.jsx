@@ -1,7 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
+import Card from '../components/Card';
 import picture from '../images/picture.jpg'
+import projects from '../data/projects.json';
+
 const Home = () => {
 
   const navigate = useNavigate();
@@ -48,34 +51,15 @@ const Home = () => {
         <h2 className='hero-heading'>Featured Work</h2>
 
         <div className='cards-container'>
-          <div className='cards'>
-            <h3 className='card-title'>AtmaYoga</h3>
-            <p className='card-para'>AtmaYoga is a responsive web application built with React that offers personalized yoga asana recommendations based on user well-being. The site features a custom testimonial slider, responsive navigation, and clean UI design. Development is ongoing, with plans to integrate an ML model for pose recognition, add a chatbot, and expand content with pages like Podcasts and Community.</p>
-            <div className='card-button-container'>
-              <button className='button'>View Site</button>
-              <button className='button'>View Source</button>
-            </div>
-          </div>
-          <div className='cards'>
-            <h3 className='card-title'>Noire</h3>
-            <p className='card-para'>Noire is a fashion-focused e-commerce platform for dresses and jewelry, combining sleek design with seamless functionality. It features secure authentication, session management, dual navigation bars, interactive banners, detailed product pages, and newsletter sign-ups. With a logo-based loader and polished UI, Noire delivers a premium shopping experience for fashion enthusiasts.</p>
-            <div className='card-button-container'>
-              <button className='button'>View Site</button>
-              <button className='button'>View Source</button>
-            </div>
-          </div>
-          <div className='cards'>
-            <h3 className='card-title'>FashionFusion</h3>
-            <p className='card-para'>Designed and developed a fully responsive e-commerce website
-for a fictional fashion brand using HTML, CSS, and JavaScript. Built
-entirely without frameworks to demonstrate mastery of core web
-technologies. Features include product showcase, category layout,
-and interactive navigation.</p>
-            <div className='card-button-container'>
-              <button className='button'>View Site</button>
-              <button className='button'>View Source</button>
-            </div>
-          </div>
+          {projects.map((project, index) => (
+            <Card
+              key={index}
+              title={project.title}
+              description={project.description}
+              siteLink={project.siteLink}
+              sourceLink={project.sourceLink}
+            />
+          ))}
         </div>
 
         <div className="view-all-container">

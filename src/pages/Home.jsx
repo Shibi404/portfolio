@@ -54,8 +54,10 @@ const Home = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
+              image={project.image}
               title={project.title}
               description={project.description}
+              techStack={project.techStack}
               siteLink={project.siteLink}
               sourceLink={project.sourceLink}
             />
@@ -75,13 +77,13 @@ const Home = () => {
 
         <div className='marquee-container'>
           <marquee behavior="scroll" direction="left" scrollamount="6" className="marquee">
-            <img src="/logos/html.png" alt="HTML" className="tech-logo" />
-            <img src="/logos/css-3.png" alt="CSS" className="tech-logo" />
-            <img src="/logos/js.png" alt="JavaScript" className="tech-logo" />
-            <img src="/logos/react.png" alt="React" className="tech-logo" />
-            <img src="/logos/node-js.png" alt="Node.js" className="tech-logo" />
-            <img src="/logos/MongoDB.png" alt="MongoDB" className="tech-logo" />
-            <img src="/logos/git.png" alt="Git" className="tech-logo" />
+            <img src="/logos/html.png" alt="HTML" className="tech-logo-marquee" />
+            <img src="/logos/css-3.png" alt="CSS" className="tech-logo-marquee" />
+            <img src="/logos/js.png" alt="JavaScript" className="tech-logo-marquee" />
+            <img src="/logos/react.png" alt="React" className="tech-logo-marquee" />
+            <img src="/logos/node-js.png" alt="Node.js" className="tech-logo-marquee" />
+            <img src="/logos/MongoDB.png" alt="MongoDB" className="tech-logo-marquee" />
+            <img src="/logos/git.png" alt="Git" className="tech-logo-marquee" />
           </marquee>
         </div>
         <div className="view-all-container">

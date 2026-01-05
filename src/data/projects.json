@@ -4,23 +4,23 @@
     "description": "AtmaYoga is a responsive web application built with React that offers personalized yoga asana recommendations based on user well-being. The site features a custom testimonial slider, responsive navigation, and clean UI design. Development is ongoing, with plans to integrate an ML model for pose recognition, add a chatbot, and expand content with pages like Podcasts and Community.",
     "siteLink": "",
     "sourceLink": "",
-    "techStack": ["React", "CSS", "JavaScript"],
-    "image": ""
+    "techStack": ["react", "css3", "javascript"],
+    "image": "/images/project-1.jpg"
   },
   {
     "title": "Noire",
     "description": "Noire is a fashion-focused e-commerce platform for dresses and jewelry, combining sleek design with seamless functionality. It features secure authentication, session management, dual navigation bars, interactive banners, detailed product pages, and newsletter sign-ups. With a logo-based loader and polished UI, Noire delivers a premium shopping experience for fashion enthusiasts.",
     "siteLink": "",
     "sourceLink": "",
-    "techStack": ["React", "Node.js", "MongoDB", "CSS"],
-    "image": ""
+    "techStack": ["react", "nodejs", "mongodb", "css3"],
+    "image": "/images/project-1.jpg"
   },
   {
     "title": "FashionFusion",
     "description": "Designed and developed a fully responsive e-commerce website for a fictional fashion brand using HTML, CSS, and JavaScript. Built entirely without frameworks to demonstrate mastery of core web technologies. Features include product showcase, category layout, and interactive navigation.",
     "siteLink": "",
     "sourceLink": "",
-    "techStack": ["HTML", "CSS", "JavaScript"],
-    "image": ""
+    "techStack": ["html5", "css3", "javascript"],
+    "image": "/images/project-1.jpg"
   }
 ]

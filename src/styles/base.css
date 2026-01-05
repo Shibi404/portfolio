@@ -35,6 +35,15 @@
   --fs-3xl: 2.7rem;   
 }
 
+/* =========================
+   THIN SCROLLBAR
+========================= */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(150, 150, 150, 0.6) transparent;
+}
+
 
 /* Reset & Global Setup */
 * {

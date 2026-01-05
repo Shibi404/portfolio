@@ -7,3 +7,10 @@
     color: var(--color-text-light);
     font-size: var(--fs-md);
 }
+
+.cards-container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}

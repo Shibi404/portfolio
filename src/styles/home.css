@@ -26,18 +26,18 @@
 }
 
 .home-text #name {
-    font-size: clamp(3.125rem, -3.3866rem + 10.1744vw, 5.3125rem);
+    font-size: 4rem;
     font-weight: 600;
 }
 
 .home-text #heading {
-    font-size: clamp(1.875rem, -1.8459rem + 5.814vw, 3.125rem);
+    font-size: 2rem;
     font-weight: 400;
     color: var(--color-secondary);
 }
 
 .home-text #paragraph {
-    font-size: clamp(0.9375rem, 0.5654rem + 0.5814vw, 1.0625rem);
+    font-size: var(--fs-md);
     font-weight: 400;
     color: var(--color-muted);
 }
@@ -97,7 +97,7 @@
 }
 
 .hero-para {
-    font-size: clamp(0.9375rem, 0.5654rem + 0.5814vw, 1.0625rem);
+    font-size: var(--fs-md);
     color: var(--color-secondary);
     padding: 10px 0px;
 }

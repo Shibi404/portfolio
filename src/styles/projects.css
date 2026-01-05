@@ -1,0 +1,9 @@
+.projects-header {
+    background-color: var(--color-bg-dark);
+}
+
+.projects-header-container {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: var(--fs-md);
+}

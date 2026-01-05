@@ -1,6 +1,5 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { Routes, Route} from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,22 +11,17 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
 function App() {
-  const location = useLocation();
 
   return (
     <>
       <Navbar />
-      <AnimatePresence mode="wait">
       <ScrollToTop />
-
-      
-        <Routes location={location} key={location.pathname}>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
-      </AnimatePresence>
 
       <Footer />
     </>

@@ -54,14 +54,14 @@
 }
 
 .card-title {
-    font-size: 1.5rem; /* text-2xl */
+    font-size: var(--fs-2xl); /* text-2xl */
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: left;
 }
 
 .card-para {
-    font-size: 0.95rem;
+    font-size: var(--fs-sm);
     color: #4b5563; /* gray-700 */
     margin-bottom: 1rem;
     line-height: 1.5;

@@ -93,11 +93,13 @@ const Home = () => {
             <img src="/logos/git.png" alt="Git" className="tech-logo-marquee" />
           </marquee>
         </div>
+        {/* 
         <div className="view-all-container">
           <button className="button view-all-btn" onClick={() => navigate('/skills')}>
             View All Skills
           </button>
         </div>
+        */}
       </div>
     </section>
     </motion.div>

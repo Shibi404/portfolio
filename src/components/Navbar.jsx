@@ -57,10 +57,10 @@ function Navbar() {
           <li className={`nav-links-item ${location.pathname === '/projects' ? 'active-link' : ''}`}>
             <Link to="/projects" onClick={() => closeMenuAndNavigate('/projects')}>Projects</Link>
           </li>
-
+          {/* 
           <li className={`nav-links-item ${location.pathname === '/skills' ? 'active-link' : ''}`}>
             <Link to="/skills" onClick={() => closeMenuAndNavigate('/skills')}>Skills</Link>
-          </li>
+          </li> */}
         </ul>
 
         <button

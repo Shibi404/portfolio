@@ -33,7 +33,7 @@
     position: relative;
     margin-left: 1rem;
     padding-left: 1rem;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid var(--color-border);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -47,7 +47,7 @@
     height: 16px;
     background-color: var(--color-bg-dark);
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--color-text);
     box-shadow: 0 0 0 2px var(--color-bg-dark);
 }
 

@@ -2,23 +2,23 @@
   /* ===== Monochrome Color Palette ===== */
 
   /* Background Shades */
-  --color-bg: #ffffff;           /* base white */
-  --color-bg-light: #f5f5f5;     /* very light gray for sections */
-  --color-bg-medium: #e0e0e0;    /* light-medium gray */
-  --color-bg-dark: #1c1c1c;      /* rich dark gray for dark sections */
+  --color-bg: #000000;           /* pitch black base */
+  --color-bg-light: #0a0a0a;     /* near-black sections */
+  --color-bg-medium: #141414;    /* slightly lifted surface */
+  --color-bg-dark: #000000;      /* deepest black */
 
   /* Text Colors */
-  --color-text: #0a0a0a;         /* primary text */
+  --color-text: #ffffff;         /* primary text on black */
   --color-text-light: #ffffff;   /* text on dark bg */
-  --color-muted: #888888;        /* muted/inactive text */
-  --color-secondary: #444444;    /* soft heading/subtext */
-  --color-accent: #222222;       /* stronger dark text */
+  --color-muted: #7a7a7a;        /* muted/inactive text */
+  --color-secondary: #b8b8b8;    /* soft heading/subtext */
+  --color-accent: #ffffff;       /* accent (white on black) */
 
   /* Borders */
-  --color-border: #d4d4d4;       /* soft border gray */
+  --color-border: #1f1f1f;       /* subtle border on black */
 
   /* State Colors */
-  --color-primary: #111111;      /* general dark tone */
+  --color-primary: #ffffff;      /* general light tone on black */
   --color-error: #ff4d4d;        /* error red */
 
   /* ===== Typography ===== */
@@ -56,7 +56,7 @@
 a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  color: var(--color-secondary);
+  color: var(--color-text);
 }
 
 html, body {
@@ -78,20 +78,20 @@ html, body {
 
 .button {
   font-family: 'Inter', sans-serif;
-  padding: 8px 16px;                     
-  background-color: var(--color-bg);
-  color: var(--color-primary);         
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--color-text);
   cursor: pointer;
   border-radius: 20px;
-  font-size: var(--fs-base);                  
+  font-size: var(--fs-base);
   font-weight: 500;
-  border: 2px solid black;
-  transition: all 0.3s ease;    
+  border: 2px solid var(--color-text);
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-text);
   color: var(--color-bg);
-  border-color: var(--color-primary);     
+  border-color: var(--color-text);
 }

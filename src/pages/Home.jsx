@@ -63,7 +63,7 @@ const Home = () => {
               <div className='edu-card-text'>
                 <h3>BTech Computer Science & Engineering</h3>
                 <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
-                <p>CGPA: 7.11</p>
+                <p>CGPA: 7.13</p>
               </div>
               <div className='duration'>
                 <p>2023 August - 2027 August</p>

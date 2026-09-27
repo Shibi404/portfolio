@@ -101,7 +101,7 @@ const Home = () => {
         <h2 className='hero-heading'>Featured Work</h2>
 
         <div className='cards-container'>
-          {projects.slice(0, 3).map((project, index) => (
+          {projects.slice(0, 2).map((project, index) => (
             <Card
               key={index}
               image={project.image}

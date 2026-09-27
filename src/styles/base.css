@@ -3,8 +3,8 @@
 
   /* Background Shades */
   --color-bg: #000000;           /* pitch black base */
-  --color-bg-light: #0a0a0a;     /* near-black sections */
-  --color-bg-medium: #141414;    /* slightly lifted surface */
+  --color-bg-light: #000000;     /* pitch black sections */
+  --color-bg-medium: #000000;    /* pitch black surface */
   --color-bg-dark: #000000;      /* deepest black */
 
   /* Text Colors */
@@ -74,6 +74,12 @@ html, body {
   max-width: 1024px;
   margin: 0 auto;
   padding: 40px 30px;
+}
+
+section {
+  border: 1px solid var(--color-border);
+  max-width: 1024px;
+  margin: 16px auto;
 }
 
 .button {

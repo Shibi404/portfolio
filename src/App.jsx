@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route} from "react-router-dom";
 
-import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
@@ -22,8 +21,6 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-
-      <Footer />
     </>
   );
 }

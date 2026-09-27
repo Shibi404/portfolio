@@ -5,6 +5,7 @@ import '../styles/about.css';
 import Card from '../components/Card';
 import picture from '../images/picture.jpg'
 import projects from '../data/projects.json';
+import { motion } from "framer-motion";
 
 const Home = () => {
 
@@ -12,6 +13,12 @@ const Home = () => {
 
   return (
     <>
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+    >
     <section className='home-container'>
       <div className='container'>
         <div className='home-text'>
@@ -136,7 +143,10 @@ const Home = () => {
         */}
       </div>
     </section>
+    </motion.div>
+
     </>
+    
   )
 }
 

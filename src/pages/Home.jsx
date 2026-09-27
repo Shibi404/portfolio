@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
+import '../styles/about.css';
 import Card from '../components/Card';
 import picture from '../images/picture.jpg'
 import projects from '../data/projects.json';
@@ -49,7 +50,49 @@ const Home = () => {
         <p className='hero-para'>
           From crafting responsive UIs to exploring full-stack projects, I thrive on solving real-world problems through technology. Currently exploring React, Node.js, and beyond.
         </p>
-        <button className='button' id='learn-more-btn' onClick={() => navigate('/about')}>Learn More</button>
+      </div>
+    </section>
+
+    <section className='education'>
+      <div className='container'>
+        <h2 className='hero-heading'>Education</h2>
+        <div className='education-card-container'>
+          <div className='timeline'>
+            <div className='education-card'>
+              <div className='timeline-dot'></div>
+              <div className='edu-card-text'>
+                <h3>BTech Computer Science & Engineering</h3>
+                <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                <p>CGPA: 7.11</p>
+              </div>
+              <div className='duration'>
+                <p>2023 August - 2027 August</p>
+              </div>
+            </div>
+            <div className='education-card'>
+              <div className='timeline-dot'></div>
+              <div className='edu-card-text'>
+                <h3>Senior Higher Secondary</h3>
+                <p>Vyasa Vidyapeetham, Palakkad</p>
+                <p>Percentage: 90%</p>
+              </div>
+              <div className='duration'>
+                <p>2021 June - 2023 May</p>
+              </div>
+            </div>
+            <div className='education-card'>
+              <div className='timeline-dot'></div>
+              <div className='edu-card-text'>
+                <h3>Higher Secondary</h3>
+                <p>Chinmaya Vidyalaya, Kollengode</p>
+                <p>Percentage: 78.1%</p>
+              </div>
+              <div className='duration'>
+                <p>2022 June - 2023 May</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

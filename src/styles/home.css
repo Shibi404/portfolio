@@ -1,55 +1,62 @@
+/* =========================
+   HERO
+========================= */
 .home-container {
     background-color: var(--color-bg);
 }
 
-.home-container .container {         
-    display: flex;             
+.home-container .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
     position: relative;
     z-index: 1;
-}
-
-.home-picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    gap: 0.75rem;
     width: 60%;
 }
 
 .home-text #name {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: var(--fs-hero);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text);
 }
 
 .home-text #heading {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-snug);
     color: var(--color-secondary);
 }
 
 .home-text #paragraph {
-    font-size: var(--fs-md);
-    font-weight: 400;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-relaxed);
     color: var(--color-muted);
+    margin-top: 0.5rem;
+    max-width: 46ch;
 }
 
+/* =========================
+   PORTRAIT (blob mask)
+========================= */
 .home-picture {
-    width: 50vw;  
-    height: 50vw; 
-    max-width: 500px;
-    max-height: 500px;
+    width: 50vw;
+    height: 50vw;
+    max-width: 420px;
+    max-height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .home-picture img {
@@ -69,55 +76,65 @@
     mask-position: center;
 }
 
-.social-icons-container {   
-    display: flex;  
-    padding-top: 5%;
-    gap: 2%;
+/* =========================
+   SOCIAL ICONS
+========================= */
+.social-icons-container {
+    display: flex;
+    padding-top: 1.5rem;
+    gap: 1rem;
 }
 
 .social-icon {
     fill: var(--color-secondary);
-    width: 30px;
-    transition: all 0.3s ease;  
+    width: 26px;
+    height: 26px;
+    transition: fill 0.3s ease;
 }
 
 .social-icon:hover {
     fill: var(--color-primary);
-
 }
 
-/* About-Preview Section */
-.about-preview {
-    background-color: var(--color-bg-light);
-    color: var(--color-text); 
-}
-
+/* =========================
+   REUSABLE SECTION HEADINGS
+========================= */
 .hero-heading {
     font-size: var(--fs-2xl);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
 }
 
 .hero-para {
-    font-size: var(--fs-md);
+    font-size: var(--fs-base);
+    line-height: var(--lh-relaxed);
     color: var(--color-secondary);
-    padding: 10px 0px;
+    padding: 0.5rem 0;
+    max-width: 65ch;
 }
 
-/* Project-Preview Section */
+.about-preview {
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+}
+
+/* =========================
+   TECH STACK STRIP
+========================= */
 .skills-preview {
     background-color: var(--color-bg-light);
     overflow: hidden;
 }
 
-.preview-heading {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
 .marquee-container {
-    padding: 2rem 0rem;
+    padding: 1.5rem 0 0.5rem;
     text-align: center;
     overflow: hidden;
 }
+
 .marquee {
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +148,7 @@
 }
 
 .tech-logo-marquee {
-    height: 50px;
+    height: 44px;
     transition: filter 0.3s ease;
     filter: grayscale(1);
 }
@@ -140,45 +157,46 @@
     filter: grayscale(0);
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
 @media screen and (max-width: 1024px) {
     .home-container .container {
         flex-direction: column-reverse;
-        gap: 0;            
+        gap: 1.5rem;
+        text-align: center;
     }
 
     .home-text {
         width: 100%;
-        text-align: center;
-    }
-
-    .home-text #name {
-        font-size: 3rem;
-    }
-
-    .home-text #heading {
-        font-size: 2rem;
+        align-items: center;
     }
 
     .home-text #paragraph {
-        font-size: var(--fs-md);
-        padding: 5px;
+        margin-inline: auto;
     }
 
-    .social-icons-container {   
-        display: flex;  
-        align-items: center;
+    .social-icons-container {
         justify-content: center;
-        padding: 20px;
-        gap: 7%;
+        gap: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-heading {
+        font-size: var(--fs-xl);
+        margin-bottom: 1rem;
     }
 
-    .hero-para {
-        font-size: var(--fs-md);
-        color: var(--color-secondary);
-        padding: 10px 0px;
+    .home-text #heading {
+        font-size: var(--fs-lg);
     }
 
-    .marquee {
-        width: 100%;
+    .home-text #paragraph {
+        font-size: var(--fs-sm);
+    }
+
+    .tech-logo-marquee {
+        height: 36px;
     }
 }
